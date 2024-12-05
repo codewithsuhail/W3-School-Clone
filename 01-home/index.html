@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="w3-style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        /* 1 */
+        .header {
+            height: 10vh;
+            /* background-color: gray; */
+            display: flex;
+        }
+
+        .logo {
+            height: 10vh;
+            width: 6%;
+            /* background-color: black; */
+        }
+
+        .nv {
+            height: 10vh;
+            width: 34%;
+            /* background-color: rebeccapurple; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .nv a {
+            padding: 1.6vw;
+            color: black;
+            text-decoration: none;
+            /* background-color: lightblue; */
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+
+        }
+
+        .nv a:hover {
+            background-color: #04AA6D;
+        }
+
+        .search {
+            height: 10vh;
+            width: 17%;
+            /* background-color: red; */
+        }
+
+        .searche {
+            padding: 4%;
+            margin-left: 0%;
+            width: 95%;
+            margin-top: 2vh;
+            border: 1px solid black;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .nv2 {
+            height: 10vh;
+            width: 28%;
+            /* background-color: goldenrod; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nv2 p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;   
+            /* background-color: #04AA6D; */
+            padding: 2.5%;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+        .nv2 p:hover{
+            background-color: rgba(207, 194, 194, 0.764);
+        }
+
+        .nv3 {
+            height: 10vh;
+            width: 15%;
+            /* background-color: lightblue; */
+            position: relative;
+        }
+        .singup{
+            height: 8vh;
+            width: 50%;
+            background-color: #04AA6D;
+            border-radius: 30px;
+            position: absolute;
+            top: 1vh;
+            z-index: 1;
+            cursor: pointer;
+        }
+        .singup:hover{
+            background-color: #048857;
+        }
+        .singup h4{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 16px;
+            margin-top: 2.5vh;
+        }
+        .login{
+            height: 8vh;
+            width: 60%;
+            background-color: #d9eee1;
+            border-radius: 30px;
+            position: absolute;
+            top: 1vh;
+            left: 30%;
+            /* z-index: 1; */
+            cursor: pointer;
+        }
+        .login:hover{
+            background-color: #048857;
+        }
+        .login h4{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            margin-left: 20%;
+            font-size: 16px;
+            margin-top: 2.5vh;
+        }
+        .login h4:hover{
+            color: white;
+        }
+
+
+        /* 2 */
+
+        .navbar {
+            height: 6vh;
+            /* background-color: gray; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            text-transform: uppercase;
+            background-color: transparent;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 1.4vh;
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .navbar a:hover {
+            background-color: black;
+        }
+
+        .main {
+            height: 90vh;
+            background-image: url(/image/background_in_space.webp);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .main h1 {
+            text-align: center;
+            color: white;
+            font-size: 70px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 16vh;
+        }
+
+        .main h3 {
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 5vh;
+            color: #fff4a3;
+        }
+
+        input {
+            margin-top: 5vh;
+            margin-left: 30%;
+            /* padding: 10px 10px 10px 350px; */
+            padding: 1% 12%;
+            border-radius: 50px 50px;
+            font-size: 17px;
+            border: none;
+            margin-bottom: 8vh;
+
+        }
+
+        .text a {
+            margin-left: 40%;
+            color: white;
+            font-size: 22px;
+        }
+
+        .text a:hover {
+            color: #fff4a3;
+        }
+
+        .robot {
+            /* background-color: blue; */
+            position: absolute;
+            height: 40vh;
+            width: 15%;
+            top: 170px;
+            left: 77%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1 -->
+    <div class="header">
+        <div class="logo"><img src="/image/w3logo.png" style="height: 70%; margin-left: 20%; margin-top: 1.5vh;" alt="">
+        </div>
+        <div class="nv">
+            <a href="#">tutorials</a>
+            <a href="#">exercises</a>
+            <a href="#">certificates</a>
+            <a href="#">services</a>
+        </div>
+        <div class="search">
+            <!-- <input class="searche"  type="search" name="search" placeholder="Search....."> -->
+            <input class="searche"
+                style="font-family: 'Font Awesome 5 Free'; font-weight: 700; text-transform: lowercase; " type="search"
+                placeholder="&#xf002  Search...">
+        </div>
+        <div class="nv2">
+            <p><i class="fa-solid fa-circle-half-stroke"></i></p>
+            <p><i style="color: #9F70FD;" class="ri-code-s-slash-fill">&nbsp;</i>Spaces</p>
+            <p><i style="color: #9F70FD;" class="ri-shopping-cart-fill">&nbsp;</i>Get Certified</p>
+        </div>
+        <div class="nv3">
+            <div class="singup"><h4> Sing&nbsp;Up</h4></div>
+            <div class="login"><h4> Log&nbsp;in</h4></div>
+        </div>
+    </div>
+    <!-- 2 -->
+    <div class="main">
+        <div class="navbar">
+            <a href="./02-hml.html">html</a>
+            <a href="./03-css.html">css</a>
+            <a href="./04-js.html">javascript</a>
+            <a href="./05-SQL.html">sql</a>
+            <a href="#">python</a>
+            <a href="#">java</a>
+            <a href="#">php</a>
+            <a href="#">how &nbsp;to</a>
+            <a href="#">w3.css</a>
+            <a href="#">c</a>
+            <a href="#">c++</a>
+            <a href="#">c#</a>
+            <a href="#">bootstrap</a>
+            <a href="#">react</a>
+            <a href="#">mysql</a>
+            <a href="#">jquery</a>
+        </div>
+        <h1>Learn to Code</h1>
+        <h3>With the world's largest web developer site. </h3>
+        <input ctype="search" name="search" placeholder="Search our tutorials, e.g. HTML">
+
+        <div class="text">
+            <a href="#" class="aabbaa">Not Sure Where To Begin?</a>
+        </div>
+        <div class="robot"><img src="/image/robot.png" style="height: 100%;" alt=""></div>
+    </div>
+</body>
+
+</html>

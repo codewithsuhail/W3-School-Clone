@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 10vh;
+    background-color: gray;
+}
+.navbar{
+    height: 6vh;
+    background-color: lightblue;
+}
+.main{
+    height: 84vh;
+    background-image: url(./image/background_in_space.webp);
+    background-size: cover;
+    background-position: center;
+}
